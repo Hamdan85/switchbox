@@ -28,8 +28,8 @@
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <COMMAND_CONFIG_SETTINGS_ID NAME="GEM_NAME" VALUE="builder" />
       <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_NAME" VALUE="gem" />
-      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_ARGS" VALUE="install ./switchbox-0.0.1.gem" />
-      <COMMAND_CONFIG_SETTINGS_ID NAME="WORKING_DIR" VALUE="install ./switchbox-0.0.1.gem" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_ARGS" VALUE="install ./switchbox-1.0.2.gem" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="WORKING_DIR" VALUE="install ./switchbox-1.0.2.gem" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
@@ -44,7 +44,7 @@
     <orderEntry type="jdk" jdkName="RVM: ruby-2.0.0-p353" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="switchbox (v1.0.1, /Users/Hamdan/Rails/GEMS/switchbox) [path][gem]">
+      <library name="switchbox (v1.0.2, /Users/Hamdan/Rails/GEMS/switchbox) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/app" />
           <root url="file://$MODULE_DIR$/bin" />

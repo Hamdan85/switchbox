@@ -2,9 +2,10 @@
 
 function inicialSetCheckboxesState(checkbox) {
     var id = checkbox.prop('id');
-    console.log(checkbox);
     if (checkbox.prop('value') == 1) {
-        $('.outterSwitch[data-id=' +  id + '] div.innerSwitch').css({left: parseInt($('.outterSwitch[data-id=' +  id + '] div.innerSwitch').parent().css('width'),10)/2 });
+        var outterWidth = parseInt($('.outterSwitch[data-id=' +  id + '] div.innerSwitch').parent().css('width'),10);
+        var innerWidth = parseInt($('.outterSwitch[data-id=' +  id + '] div.innerSwitch').css('width'),10);
+        $('.outterSwitch[data-id=' +  id + '] div.innerSwitch').css({left: outterWidth-innerWidth });
         $('.outterSwitch[data-id=' +  id + '] .content[data-onoff=on]').css({ opacity: 1 });
         $('.outterSwitch[data-id=' +  id + '] .content[data-onoff=off]').css({ opacity: 0 });
         $('.outterSwitch[data-id=' +  id + ']').css('background-color', 'red');
@@ -18,11 +19,13 @@ function inicialSetCheckboxesState(checkbox) {
 
 function setCheckBoxState(checkbox, state) {
     var id = checkbox.prop('id');
+    var outterWidth = parseInt($('.outterSwitch[data-id=' +  id + '] div.innerSwitch').parent().css('width'),10);
+    var innerWidth = parseInt($('.outterSwitch[data-id=' +  id + '] div.innerSwitch').css('width'),10);
     if (state == true) {
         checkbox.prop('checked', true);
         checkbox.val(1);
         $('input[name="' +  checkbox.prop('name') + '"][type=hidden]').val(1);
-        $('.outterSwitch[data-id=' +  id + '] div.innerSwitch').animate({left: parseInt($('.outterSwitch[data-id=' +  id + '] div.innerSwitch').parent().css('width'),10)/2 }, 300);
+        $('.outterSwitch[data-id=' +  id + '] div.innerSwitch').animate({left: outterWidth-innerWidth }, 300);
         $('.outterSwitch[data-id=' +  id + '] .content[data-onoff=on]').animate({ opacity: 1 }, 300);
         $('.outterSwitch[data-id=' +  id + '] .content[data-onoff=off]').animate({ opacity: 0 }, 300);
         $('.outterSwitch[data-id=' +  id + ']').css('background-color', 'red');

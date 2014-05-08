@@ -1,6 +1,7 @@
 # Switchbox
 
-An awesome plugin that extends Rails FormBuilder making the boolean fields looks like an awesome animated switch
+An awesome plugin that extends Rails FormBuilder making the boolean fields looks like an awesome animated switch.
+It's switchable, It's draggable, It's switchbox.
 
 ## Installation
 
@@ -34,7 +35,7 @@ Use:
 
     <%= f.switch_box :boolean_field %>
 
-#customization
+##customization
 
 To override your switch use:
 
